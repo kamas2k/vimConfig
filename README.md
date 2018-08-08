@@ -9,13 +9,13 @@ xargs --arg-file ../../../vimConfig/vimPluginUrls -I % sh -c "git clone %"
 
  mkdir ~/.config/nvim/autoload/ && curl -LSso ~/.config/nvim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
  
- 
-# change to bundle directory
-# git clone https://github.com/Shougo/deoplete.nvim.git
-# yaourt -S python-pip
-# pip3 install --user neovim
+# install deoplete
+change to bundle directory
+git clone https://github.com/Shougo/deoplete.nvim.git
+yaourt -S python-pip
+pip3 install --user neovim
 
-# put this into your init.vim
+put this into your init.vim
 
 set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup = 1
