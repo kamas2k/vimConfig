@@ -1,14 +1,14 @@
-# vimConfig
-vim config as nvim config
+# vimConfig as nvim config
 
-glone this into ~/ or cd
+clone this into ~/ or cd
 
+```
 cd && mkdir .config/nvim && mkdir .config/nvim/bundle && cd .config/nvim &&
 cp ../../../vimConfig/init.vim ./ && cd bundle &&
 xargs --arg-file ../../../vimConfig/vimPluginUrls -I % sh -c "git clone %"
 
- mkdir ~/.config/nvim/autoload/ && curl -LSso ~/.config/nvim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
- 
+mkdir ~/.config/nvim/autoload/ && curl -LSso ~/.config/nvim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
 # install deoplete
 change to bundle directory
 git clone https://github.com/Shougo/deoplete.nvim.git
@@ -25,7 +25,7 @@ let g:deoplete#enable_at_startup = 1
 sudo pacman -S xclip
 
 then put this into your init.vim
-
+```
 let g:clipboard = {
   \   'name': 'xclip-xfce4-clipman',
   \   'copy': {
@@ -38,3 +38,4 @@ let g:clipboard = {
   \   },
   \   'cache_enabled': 1,
   \ }
+```
