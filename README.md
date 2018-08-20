@@ -22,6 +22,12 @@ put this into your init.vim
 set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup = 1
 ```
+start nvim
+
+```
+:UpdateRemotePlugins
+```
+
 # install clipboard
 
 sudo pacman -S xclip
